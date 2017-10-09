@@ -15,8 +15,8 @@ metadata {
 	// UI tile definitions
 	tiles (scale: 2){
 		
-		valueTile("water", "device.water", inactiveLabel: false, width: 2,  height: 1 ) {
-			state "device.water", label:'${currentValue} F',
+		valueTile("water", "device.water", inactiveLabel: false, width: 2,  height: 2 ) {
+			state "temperature", label:'${currentValue}°',
    					backgroundColors: [
 							[value: 173, color: "#153591"],
 							[value: 176, color: "#1e9cbb"],
@@ -27,10 +27,9 @@ metadata {
 							[value: 190, color: "#bc2323"]
 					]
 		}
-
-
-		valueTile("fire", "device.fire", inactiveLabel: false, width: 2,  height: 1 ) {
-			state "device.fire", label:'${currentValue} F',
+            
+		valueTile("fire", "device.fire", inactiveLabel: false, width: 2,  height: 2 ) {
+			state "temperature", label:'${currentValue}°',
    					backgroundColors: [
 							[value: 200, color: "#153591"],
 							[value: 300, color: "#1e9cbb"],
